@@ -77,3 +77,4 @@ crashlytics-build.properties
 *.meta linguist-generated
 *.prefab linguist-generated
 *.unity linguist-generated
+.vsconfig
