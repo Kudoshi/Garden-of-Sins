@@ -26,11 +26,6 @@ public class Player : MonoBehaviour
     private GameObject boxPlaced;
     private float lastBoxTime = 0;
     private BoxCursorControl cursorControl;
-    private void Start()
-    {
-        
-    }
-
 
 
     private void OnDrawGizmos()
@@ -57,7 +52,6 @@ public class Player : MonoBehaviour
     /// <param name="rightStick"></param>
     public void CubePlacement(Vector2 rightStick)
     {
-        Debug.Log(rightStick);
         Vector2 target = transform.position + new Vector3(rightStick.x * boxRange, rightStick.y * boxRange);
         cubePlacement = target;
     }
