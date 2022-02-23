@@ -10,11 +10,15 @@ public class PlayerInputController : MonoBehaviour
     public InteractionManager interactionManager;
     public PlayerInput playerInput;
     public DialogueSO dialogueSO;
+    public Player player;
 
     private Rigidbody2D rb;
 
     private float movementValue = 0;
     private bool jump = false;
+
+    private Vector2 rightStickVal;
+
     void OnMovement(InputValue value)
     {
         movementValue = value.Get<float>();
@@ -22,6 +26,14 @@ public class PlayerInputController : MonoBehaviour
     void OnJump(InputValue value)
     {
         jump = value.isPressed;
+    }
+    void OnPlaceCube(InputValue value)
+    {
+        player.PlaceCube();
+    }
+    void OnRightStick(InputValue value)
+    {
+        rightStickVal = value.Get<Vector2>();
     }
 
     void OnInteract(InputValue value)
@@ -34,10 +46,6 @@ public class PlayerInputController : MonoBehaviour
     {
         dialogueSO.TriggerOnDialogueInteracted(cachedDialogue);
     }
-
-
-
-
     // Events
     private Dialogue cachedDialogue;
 
@@ -53,10 +61,23 @@ public class PlayerInputController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        movementSystem.Move(movementValue, false, jump);
+        UpdateBoxCursor();
     }
 
+    private void UpdateBoxCursor()
+    {
+        movementSystem.Move(movementValue, false, jump);
+        if (playerInput.currentControlScheme == "Controller")
+        {
+            player.CubePlacement(rightStickVal);
 
+        }
+        else if (playerInput.currentControlScheme == "KBM")
+        {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            player.CubePlacementMouse(mousePos);
+        }
+    }
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
