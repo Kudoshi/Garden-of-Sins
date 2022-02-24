@@ -4208,7 +4208,8 @@ PrefabInstance:
       propertyPath: m_Lens.OrthographicSize
       value: 16
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1288054603, guid: f577cc50e1bb072488c67fac8550ce28, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f577cc50e1bb072488c67fac8550ce28, type: 3}
 --- !u!1 &3965250796865951131 stripped
 GameObject:
