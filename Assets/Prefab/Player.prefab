@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2632073538037746155}
   - component: {fileID: 2632073538037746153}
   - component: {fileID: 2632073538037746152}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2046412705
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0, g: 0.685429, b: 0.7924528, a: 1}
@@ -122,9 +122,12 @@ GameObject:
   - component: {fileID: 2632073538201621851}
   - component: {fileID: 2632073538201621850}
   - component: {fileID: 2632073538201621848}
-  m_Layer: 0
+  - component: {fileID: 1509387822}
+  - component: {fileID: 1509387823}
+  - component: {fileID: 1509387825}
+  m_Layer: 14
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,6 +212,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSystem: {fileID: 2632073538201621848}
+  interactionManager: {fileID: 1509387823}
+  playerInput: {fileID: 2632073538201621851}
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
+  player: {fileID: 1509387825}
 --- !u!114 &2632073538201621848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +248,87 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1509387822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2632073538201621855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f9dc1839167554482093266d430e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
+  onDialogueStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2632073538201621850}
+        m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+        m_MethodName: OnDialogueStart
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2632073538201621850}
+        m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+        m_MethodName: OnDialogueEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDialogueContinue:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueInteracted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1509387823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2632073538201621855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f86998e11e643c3409fdb89dedbe9405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRadius: {x: 9, y: 4}
+  viewInteractionRadius: 1
+  color: {r: 0, g: 0, b: 0, a: 0.2784314}
+--- !u!114 &1509387825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2632073538201621855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1421006a2a7f604f8d376e42bac6f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxPf: {fileID: 4481322051606005858, guid: ca00b5662035b8546ab5363304025572, type: 3}
+  controllerCursorPf: {fileID: 7603591601347801988, guid: efe27f460265d1e45b34cafd6ae75869, type: 3}
+  boxRange: 4
+  rangeSpawn: {x: 1.2, y: 2.2}
+  cdDuration: 5
 --- !u!1 &2632073538780804689
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +340,7 @@ GameObject:
   - component: {fileID: 2632073538780804686}
   - component: {fileID: 2632073538780804684}
   - component: {fileID: 2632073538780804687}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,8 +398,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2046412705
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 0, g: 0.6862745, b: 0.79215693, a: 1}
@@ -349,7 +437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2632073538853947403}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,7 +470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2632073539420547965}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: HeadCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2632073539445174259}
   - component: {fileID: 2632073539445174256}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,8 +559,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2046412705
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -494,7 +582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2632073539659931203}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2632073540025062471}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Indicators
   m_TagString: Untagged
   m_Icon: {fileID: 0}

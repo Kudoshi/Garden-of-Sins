@@ -217,8 +217,11 @@ public class MovementSystem : MonoBehaviour
                 continue;
 
             isGrounded = true; //Sets grounded
-            
-            if (!wasGrounded)
+            if (colliders[i].gameObject.tag == "PlayerBox"
+            {
+                jumpAmtLeft += 1;
+            }
+            else if (!wasGrounded)
             {
                 jumpAmtLeft = jumpAmt; //Resets Jump amount
                 OnLandEvent.Invoke();

@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3965250795919252802}
   - component: {fileID: 3965250795919252805}
+  - component: {fileID: 1288054602}
+  - component: {fileID: 1288054603}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -39,7 +41,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3965250795919252804}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
@@ -54,7 +56,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 14
+    OrthographicSize: 8
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -67,6 +69,67 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 3965250796641860155}
+--- !u!114 &1288054602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3965250795919252804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f9dc1839167554482093266d430e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
+  onDialogueStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1288054603}
+        m_TargetAssemblyTypeName: CameraController, Assembly-CSharp
+        m_MethodName: OnDialogueStart
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onDialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1288054603}
+        m_TargetAssemblyTypeName: CameraController, Assembly-CSharp
+        m_MethodName: DisableCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDialogueContinue:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueInteracted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1288054603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3965250795919252804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac37e76344e0dec4cae0d2f38f41f6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3965250796641860154
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,7 +140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3965250796641860155}
   - component: {fileID: 3965250796641860153}
-  - component: {fileID: 3965250796641860152}
+  - component: {fileID: 395258457}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -111,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3965250796641860152
+--- !u!114 &395258457
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,19 +186,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0.2, z: 0}
-  m_LookaheadTime: 0.3
-  m_LookaheadSmoothing: 6
-  m_LookaheadIgnoreY: 1
+  m_TrackedObjectOffset: {x: 0, y: -1, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 0
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 162.4
-  m_DeadZoneWidth: 0.1
-  m_DeadZoneHeight: 0.1
+  m_CameraDistance: 10
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8

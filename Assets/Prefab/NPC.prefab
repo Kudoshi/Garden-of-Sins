@@ -414,12 +414,13 @@ MonoBehaviour:
     dialogueMessage:
     - npcName: Creeper
       sentences:
-      - This is message number 1
-      - Message number 2
-      - Tssssssss.......
+      - Yo you are in the wrong world dude. Your are 2D. You don't belong here
+      - Hold up... why am i 2D?? Welp guess i am the lost one. Not you
+      - "But still... \nTssssssss......."
     - npcName: Player
       sentences:
-      - Welp guess he just has to explode then :/
+      - Ah shit. Here we go again.
+      - We back in the mines swinging our axes from side to side. Side side to side
 --- !u!61 &74507476
 BoxCollider2D:
   m_ObjectHideFlags: 0
