@@ -251,26 +251,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 164848969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f68a9b24b18b24491753c610ba6c2b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f2ea211f38eaf247866ea6db7fdf9cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonsRequired:
   - {fileID: 164848969}
-  onButtonActivate:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Obstacle_AppearDissapear, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  objectsToAppearance:
+  - {fileID: 1449139903}
+  shouldAppear: 0
 --- !u!1 &256217869
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +959,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.31, y: 9.26, z: -10}
+  m_LocalPosition: {x: 42, y: 25, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4008,11 +3996,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2632073538201621853, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.31
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 2632073538201621853, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.26
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 2632073538201621853, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4166,11 +4154,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3965250795919252802, guid: f577cc50e1bb072488c67fac8550ce28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.31
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 3965250795919252802, guid: f577cc50e1bb072488c67fac8550ce28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3965250795919252802, guid: f577cc50e1bb072488c67fac8550ce28, type: 3}
       propertyPath: m_LocalPosition.z
