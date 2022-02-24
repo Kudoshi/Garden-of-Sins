@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 /// <summary>
 /// Dialogue Manager
@@ -33,6 +34,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameTxt;
     [SerializeField] private TextMeshProUGUI dialogueTxt;
     [SerializeField] private float textAnimationTime = -1; //Time per letter. Leave as -1 if want to just skip a frame per letter
+    [SerializeField] private Animator animator;
 
     private Dialogue dialogue;
     private Vector2Int dialogueIndex; //[DialogueMessage(person speaking), sentences]
@@ -94,21 +96,59 @@ public class DialogueManager : MonoBehaviour
         // Set current dialogueIndex
         dialogueIndex = new Vector2Int(-1,-1);
         displayUI.SetActive(true);
+        animator.SetBool("IsOpen", true);
+
         // Resets Display
 
         dialogueSO.TriggerOnDialogueStart(dialogue);
+    }
+    private void Update()
+    {
+        //Debug.Log(animator.GetBool("IsOpen"));
     }
 
     private void TriggerEndDialogue(Dialogue dialogue)
     {
         isInDialogueMode = false;
-        displayUI.SetActive(false);
+
+        animator.SetBool("IsOpen", false);
+
+        StartCoroutine(CheckAnimationCompleted("DialogueClose", CloseDialogueBox));
         dialogueSO.TriggerOnDialogueEnd(dialogue);
     }
 
     private void TriggerContinueDialogue(Dialogue dialogue)
     {
         dialogueSO.TriggerOnDialogueContinue(dialogue);
+    }
+
+    private void CloseDialogueBox()
+    {
+        displayUI.SetActive(false);
+    }
+
+    /// <summary>
+    /// Checks if the current animation has ended. If yes, call the onComplete function
+    /// 
+    /// After set trigger. It will have to wait awhile before changing to next animation
+    /// This is because animation state is updated after one frame. So need to wait 1 frame before checking
+    /// </summary>
+    /// <param name="currentAnim">The animation you want to check if its completed</param>
+    /// <param name="onComplete">The function you want to invoke after animation is completed</param>
+    /// <returns></returns>
+    IEnumerator CheckAnimationCompleted(string currentAnim, Action onComplete)
+    {
+        yield return null;
+        //Skips next frame if animation is still the same
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName(currentAnim))
+        {
+            AnimatorClipInfo[] animatorinfo = animator.GetCurrentAnimatorClipInfo(0);
+            yield return null;  
+        }
+
+        //Calls the onComplete function after the currentAnim has changed
+        if (onComplete != null)
+            onComplete();
     }
 
     /// <summary>

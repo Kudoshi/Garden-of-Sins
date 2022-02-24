@@ -2687,15 +2687,6 @@ MonoBehaviour:
     updateInRuntime: 1
     clip: {fileID: 0}
     source: {fileID: 0}
-  - name: TestMusic
-    volume: 0.485
-    spatialBlend: 0.365
-    pitch: 1
-    loop: 0
-    useGlobalValue: 0
-    updateInRuntime: 1
-    clip: {fileID: 0}
-    source: {fileID: 0}
 --- !u!1 &2051878600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,6 +2796,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2107309095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2957063948720615926, guid: ad6f7425173034f4297e54adc5d1c839, type: 3}
+  m_PrefabInstance: {fileID: 2957063950574079262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2107309096
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107309095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8c905ab0a7b899841ae76e2134ee9e90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2632073538486614558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2957,6 +2972,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 903012320}
     m_Modifications:
+    - target: {fileID: 2957063948720615922, guid: ad6f7425173034f4297e54adc5d1c839, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2107309096}
+    - target: {fileID: 2957063948720615922, guid: ad6f7425173034f4297e54adc5d1c839, type: 3}
+      propertyPath: textAnimationTime
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 2957063948720615926, guid: ad6f7425173034f4297e54adc5d1c839, type: 3}
       propertyPath: m_Name
       value: DialogueManager
@@ -3044,6 +3067,14 @@ PrefabInstance:
     - target: {fileID: 2957063948720615927, guid: ad6f7425173034f4297e54adc5d1c839, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957063949346510446, guid: ad6f7425173034f4297e54adc5d1c839, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957063949346510447, guid: ad6f7425173034f4297e54adc5d1c839, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -350.3602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6f7425173034f4297e54adc5d1c839, type: 3}
