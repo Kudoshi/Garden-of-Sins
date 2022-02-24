@@ -28,14 +28,6 @@ public class Player : MonoBehaviour
     private BoxCursorControl cursorControl;
 
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawSphere(cubePlacement, 1);
-    }
-
-
-
-
     /////////////////////////////////
     /////     CUBE PLACEMENT
     ///////////////////////////////
@@ -145,7 +137,6 @@ public class Player : MonoBehaviour
     /// </summary>
     public void PlaceCube()
     {
-        Debug.Log(Time.time);
         if (cubeCursor && boxPlaced == null && CheckBoxCDDuration())
         {
             boxPlaced = Instantiate(boxPf, cubePlacement, boxPf.transform.rotation);

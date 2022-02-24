@@ -9,6 +9,5 @@ public class PlayerInteractable: MonoBehaviour
 {
     public virtual void Interact()
     {
-        Debug.Log("Player Interacted");
     }
 }

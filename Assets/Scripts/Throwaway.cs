@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class Throwaway : MonoBehaviour
 {
-    private void Awake()
+    public void ReceiveInput(List<ButtonEvent> events)
     {
-        
+        Debug.Log(events[0].isPressed);
     }
 }
