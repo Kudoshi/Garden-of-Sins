@@ -9,9 +9,12 @@ using UnityEngine.InputSystem;
 public class InteractionManager : MonoBehaviour
 {
     public Vector2 interactionRadius;
+    public float interactionCD;
     [Header("Debug")]
     public bool viewInteractionRadius;
     public Color color;
+
+    private float lastInteracted;
     /// <summary>
     /// Draw debug purpose interaction radius
     /// </summary>

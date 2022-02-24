@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3965250795919252802}
   - component: {fileID: 3965250795919252805}
-  - component: {fileID: 1288054602}
   - component: {fileID: 1288054603}
   m_Layer: 0
   m_Name: CM vcam1
@@ -69,55 +68,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 3965250796641860155}
---- !u!114 &1288054602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3965250795919252804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4f9dc1839167554482093266d430e78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
-  onDialogueStart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1288054603}
-        m_TargetAssemblyTypeName: CameraController, Assembly-CSharp
-        m_MethodName: OnDialogueStart
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  onDialogueEndEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1288054603}
-        m_TargetAssemblyTypeName: CameraController, Assembly-CSharp
-        m_MethodName: DisableCamera
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onDialogueContinue:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueInteracted:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1288054603
 MonoBehaviour:
   m_ObjectHideFlags: 0
