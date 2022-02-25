@@ -25,3 +25,117 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     clip: {fileID: 8300000, guid: 3038989ceb821774a8dda29638ab509c, type: 3}
+  - name: MainMenu
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: eb3a4936416a1de4580021846d34c36a, type: 3}
+  - name: BoxDestroy
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 4f84cb4676f492e449ff2c349c70cb18, type: 3}
+  - name: BoxSpawnFail
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 5b2677ac10306f74d815cd8146bab860, type: 3}
+  - name: BoxSpawn
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: d04de3312bfc47f4499150abcce44021, type: 3}
+  - name: CollectiblesCollect
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: a3d90b258a0f9054e9cd8c34bef77589, type: 3}
+  - name: Death
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 673d608b50652f340b3e87e8a7e6fe1a, type: 3}
+  - name: DialogueEnd
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 9f393c4d249b6cc46bdabfe8b576e650, type: 3}
+  - name: DialogueStart
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 0a3dc23639045604795487e4d08c6c58, type: 3}
+  - name: Jump
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 707b73f152331a5409a16808d7a4ed8a, type: 3}
+  - name: RunLeftGrass
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 98c1dac4ffe008543872b8bc37c1060f, type: 3}
+  - name: RunLeft
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: f03fbea68ad50fd4ba4905f7595d223b, type: 3}
+  - name: RunRightGrass
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 5ac6b6dc48632ce44a18ac130d5584e4, type: 3}
+  - name: RunRight
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 612509c98df776446b7485c0359f0cd9, type: 3}
+  - name: SaveTrigger
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 3fa9508603616834189bb0f0077ae9ef, type: 3}
+  - name: Spawn
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: d8892a8ad92bd104aa058f2c84ae9bd6, type: 3}
+  - name: WalkLeftGrass
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 7133e431adcd9fc4fb922b04e386a410, type: 3}
+  - name: WalkLeft
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 7867701ca7769be49b71d706e54605db, type: 3}
+  - name: WalkRightGrass
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 210700b7342cdab48869f232792bb3cc, type: 3}
+  - name: WalkRight
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 59626264c8f156a4c8c65a38c126d0f8, type: 3}
