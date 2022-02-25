@@ -78,3 +78,8 @@ crashlytics-build.properties
 *.prefab linguist-generated
 *.unity linguist-generated
 .vsconfig
+
+
+
+# Custom ignores
+[Dd]ev/
