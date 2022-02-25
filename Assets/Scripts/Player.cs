@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject boxPf;
     [SerializeField] private GameObject controllerCursorPf;
+    [SerializeField] private PlayerInfoSO playerInfoSO;
 
 
     [Header("Box")]
@@ -129,8 +130,9 @@ public class Player : MonoBehaviour
         
     }
 
-    private void Die()
+    public void Die()
     {
+        playerInfoSO.AddDieAmt();
         Event.TriggerPlayerDie(transform);
     }
 
@@ -171,5 +173,10 @@ public class Player : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public void AddCollectible(int amt)
+    {
+        playerInfoSO.AddCollectible(amt);
     }
 }
