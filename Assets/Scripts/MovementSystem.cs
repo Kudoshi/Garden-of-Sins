@@ -27,6 +27,7 @@ using UnityEngine.Events;
 public class MovementSystem : MonoBehaviour
 {
     [SerializeField] private Vector2 velocityViewOnly;
+    [SerializeField] private AnimationController animator;
     [Header("Ground/Ceiling Check")]
     [SerializeField] private Transform headCheck; //Place headCheck on head
     [SerializeField] private Transform groundCheck; //Place groundCheck on feet
@@ -64,10 +65,20 @@ public class MovementSystem : MonoBehaviour
     const float groundedRadius = .2f; // Circle size to check ground overlap
     const float headRadius = .2f; // Circle size to check head overlap
 
+    //State
+    const string PLAYER_MOVE = "player_move";
+    const string PLAYER_JUMP = "player_fall";
+    const string PLAYER_IDLE = "player_breath";
+    const string PLAYER_PUSH = "player_push";
+    const string PLAYER_FALL = "player_jump";
+
     // Event class for the crouch event
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
     
+
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -120,7 +131,8 @@ public class MovementSystem : MonoBehaviour
                 //Force jump
                 rb.velocity = new Vector2(rb.velocity.x, 0); //Reset gravity
                 rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-                
+                animator.ChangeAnimationState(PLAYER_JUMP);
+
                 //Condition setting
                 jumpAmtLeft -= 1;
                 isJumping = true; 
@@ -141,6 +153,17 @@ public class MovementSystem : MonoBehaviour
         //Smoothdamp towards target velocity
         Vector3 targetVelocity = new Vector2(moveVal * moveSpeed, rb.velocity.y);
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref refVelo, smoothTime);
+
+        if (isGrounded && Mathf.Abs(rb.velocity.x) > 0.5)
+        {
+            animator.ChangeAnimationState(PLAYER_MOVE);
+        }
+        else if (isGrounded)
+        {
+            animator.ChangeAnimationState(PLAYER_IDLE);
+        }
+        //Animation for if they are on ground or not
+
 
         // -- FLIP -- 
 
@@ -221,6 +244,7 @@ public class MovementSystem : MonoBehaviour
             if (!wasGrounded)
             {
                 jumpAmtLeft = jumpAmt; //Resets Jump amount
+                animator.ChangeAnimationState(PLAYER_IDLE);
                 OnLandEvent.Invoke();
             }
                 
@@ -236,9 +260,10 @@ public class MovementSystem : MonoBehaviour
     private void ApplyGravity()
     {
         //Apply gravity
-        if (rb.velocity.y < 0)
+        if (rb.velocity.y < 0 && !isGrounded)
         {
             rb.velocity += Vector2.up * Physics.gravity.y *gravityForce;
+            animator.ChangeAnimationState(PLAYER_FALL);
         }
     }
 }

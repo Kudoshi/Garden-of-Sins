@@ -1,0 +1,1094 @@
+fileFormatVersion: 2
+guid: 196bb8bd94dd1c24a85e828d02651d68
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 40
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData:
+  - name: Jump
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 122
+      width: 38
+      height: 110
+    spriteID: 24fda0c76ab729b4ca631899e3e227e8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 35, y: 119}
+  - name: Jump_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 229
+      width: 40
+      height: 120
+    spriteID: 9fa221e3a0e65f34db8a20dad2a9d59d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -38, y: 229}
+  - name: Double Jump
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 69
+      height: 99
+    spriteID: ef72f21cf7995db45be6f812c7fdb9c3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -22, y: -17}
+  - name: Jump_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 357
+      width: 40
+      height: 120
+    spriteID: 4675cdd030436f84b9157118f9c42127
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -38, y: 357}
+  - name: Jump_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 240
+      width: 38
+      height: 110
+    spriteID: 8eafcca98a2fa394ab3b316ed923a18b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 35, y: 237}
+  - name: Push
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 111
+      width: 44
+      height: 110
+    spriteID: 530a9445b8efb2d40a95183f15b1c81b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -40, y: 108}
+  - name: Push_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 4
+      width: 41
+      height: 110
+    spriteID: 2e8fde45d4fccbf488782c9343582fe1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 34, y: 1}
+  - name: Nm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 358
+      width: 37
+      height: 110
+    spriteID: f1ed11dff8d2d854abb350fbb419e861
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 86, y: 355}
+  - name: Nm_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 358
+      width: 24
+      height: 110
+    spriteID: 098f4bd9587154940a6cea84a017f4ff
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 127, y: 355}
+  - name: Trans
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 240
+      width: 26
+      height: 110
+    spriteID: ff7a55cbaf51cfe49a53bf1a67a66d7e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 127, y: 237}
+  - name: Trans_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 122
+      width: 28
+      height: 110
+    spriteID: 4dc6da4cc1fccea4a973a569fa10c593
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 127, y: 119}
+  - name: Walk
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 4
+      width: 33
+      height: 110
+    spriteID: 6a35ce5a3070864459821a5bcd68ae40
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 129, y: 1}
+  - name: Walk_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 358
+      width: 38
+      height: 110
+    spriteID: 0d132843321efc645a22b58da504a9cd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 35, y: 355}
+  - name: Breath
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 4
+      width: 38
+      height: 110
+    spriteID: 4737ee1894dd90349bf09ec0c6730578
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 84, y: 1}
+  - name: Breathe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 122
+      width: 38
+      height: 110
+    spriteID: e06c4840a5fda7e4486e807e96827836
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 84, y: 119}
+  - name: Breathe_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 240
+      width: 38
+      height: 110
+    spriteID: 22c221f6b09f20e4cb9e6d23fff28e56
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 84, y: 237}
+  rigSpriteImportData:
+  - name: Jump
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 122
+      width: 38
+      height: 110
+    spriteID: aacebaf169b1be44d98ba2464966a654
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 23, y: 107}
+  - name: Jump_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 229
+      width: 40
+      height: 120
+    spriteID: 2623095d942ab22439e59681d4fcbb70
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -50, y: 217}
+  - name: Double Jump
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 69
+      height: 99
+    spriteID: defe675b50bb57d429708dea678ee28a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -34, y: -29}
+  - name: Jump_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 357
+      width: 40
+      height: 120
+    spriteID: e5821007a7c3aad44afdadb16138299c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -50, y: 345}
+  - name: Jump_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 240
+      width: 38
+      height: 110
+    spriteID: 79d22643a859cad49b2d801ea22e0216
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 23, y: 225}
+  - name: Push
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 111
+      width: 44
+      height: 110
+    spriteID: eed40a1188e67d144aacf0744e3c06fc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -52, y: 96}
+  - name: Push_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 4
+      width: 41
+      height: 110
+    spriteID: 3a71d42ecd8014946adc64fe37ab75ae
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 22, y: -11}
+  - name: Nm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 358
+      width: 37
+      height: 110
+    spriteID: 16a0ad1df229fce47b61812ca0400b94
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 74, y: 343}
+  - name: Nm_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 358
+      width: 24
+      height: 110
+    spriteID: 9fa7792bf8709db42963f2394fd7bba4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 115, y: 343}
+  - name: Trans
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 240
+      width: 26
+      height: 110
+    spriteID: 1247757069f57d445b88ba4f090da132
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 115, y: 225}
+  - name: Trans_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 122
+      width: 28
+      height: 110
+    spriteID: 79f053c2050657c4280d749cdffcc7b4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 115, y: 107}
+  - name: Walk
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 4
+      width: 33
+      height: 110
+    spriteID: e6be85eb0a5fd93418e90fdb5f4c5004
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 117, y: -11}
+  - name: Walk_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 358
+      width: 38
+      height: 110
+    spriteID: d2abf94dc9e212746863c2284ea81667
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 23, y: 343}
+  - name: Breath
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 4
+      width: 38
+      height: 110
+    spriteID: 17bece53ca9c945468c3e5fcab40a355
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 72, y: -11}
+  - name: Breathe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 122
+      width: 38
+      height: 110
+    spriteID: f120a7b323216e74a8027493c9d59379
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 72, y: 107}
+  - name: Breathe_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 240
+      width: 38
+      height: 110
+    spriteID: eabc75266e8a1e14ea7a065d28b47cfc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 72, y: 225}
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 256
+  importedTextureHeight: 512
+  documentSize: {x: 120, y: 120}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 256
+  textureActualHeight: 512
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 0
+  mosaicPSDLayers:
+  - name: Jump
+    spriteName: Jump
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 24fda0c76ab729b4ca631899e3e227e8
+    layerID: 17
+    mosaicPosition: {x: 81, y: 122}
+  - name: Jump
+    spriteName: Jump_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9fa221e3a0e65f34db8a20dad2a9d59d
+    layerID: 16
+    mosaicPosition: {x: 4, y: 229}
+  - name: Double Jump
+    spriteName: Double Jump
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ef72f21cf7995db45be6f812c7fdb9c3
+    layerID: 15
+    mosaicPosition: {x: 4, y: 4}
+  - name: Jump
+    spriteName: Jump_2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4675cdd030436f84b9157118f9c42127
+    layerID: 14
+    mosaicPosition: {x: 4, y: 357}
+  - name: Jump
+    spriteName: Jump_3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8eafcca98a2fa394ab3b316ed923a18b
+    layerID: 13
+    mosaicPosition: {x: 81, y: 240}
+  - name: Push
+    spriteName: Push
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 530a9445b8efb2d40a95183f15b1c81b
+    layerID: 12
+    mosaicPosition: {x: 4, y: 111}
+  - name: Push
+    spriteName: Push_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2e8fde45d4fccbf488782c9343582fe1
+    layerID: 11
+    mosaicPosition: {x: 81, y: 4}
+  - name: Nm
+    spriteName: Nm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f1ed11dff8d2d854abb350fbb419e861
+    layerID: 10
+    mosaicPosition: {x: 130, y: 358}
+  - name: Nm
+    spriteName: Nm_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 098f4bd9587154940a6cea84a017f4ff
+    layerID: 9
+    mosaicPosition: {x: 176, y: 358}
+  - name: Trans
+    spriteName: Trans
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ff7a55cbaf51cfe49a53bf1a67a66d7e
+    layerID: 8
+    mosaicPosition: {x: 176, y: 240}
+  - name: Trans
+    spriteName: Trans_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4dc6da4cc1fccea4a973a569fa10c593
+    layerID: 7
+    mosaicPosition: {x: 176, y: 122}
+  - name: Walk
+    spriteName: Walk
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6a35ce5a3070864459821a5bcd68ae40
+    layerID: 6
+    mosaicPosition: {x: 176, y: 4}
+  - name: Walk
+    spriteName: Walk_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0d132843321efc645a22b58da504a9cd
+    layerID: 5
+    mosaicPosition: {x: 81, y: 358}
+  - name: Breath
+    spriteName: Breath
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4737ee1894dd90349bf09ec0c6730578
+    layerID: 4
+    mosaicPosition: {x: 130, y: 4}
+  - name: Breathe
+    spriteName: Breathe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e06c4840a5fda7e4486e807e96827836
+    layerID: 3
+    mosaicPosition: {x: 130, y: 122}
+  - name: Breathe
+    spriteName: Breathe_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 22c221f6b09f20e4cb9e6d23fff28e56
+    layerID: 2
+    mosaicPosition: {x: 130, y: 240}
+  rigPSDLayers:
+  - name: Jump
+    spriteName: Jump
+    isGroup: 0
+    parentIndex: -1
+    spriteID: aacebaf169b1be44d98ba2464966a654
+    layerID: 17
+    mosaicPosition: {x: 81, y: 122}
+  - name: Jump
+    spriteName: Jump_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2623095d942ab22439e59681d4fcbb70
+    layerID: 16
+    mosaicPosition: {x: 4, y: 229}
+  - name: Double Jump
+    spriteName: Double Jump
+    isGroup: 0
+    parentIndex: -1
+    spriteID: defe675b50bb57d429708dea678ee28a
+    layerID: 15
+    mosaicPosition: {x: 4, y: 4}
+  - name: Jump
+    spriteName: Jump_2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e5821007a7c3aad44afdadb16138299c
+    layerID: 14
+    mosaicPosition: {x: 4, y: 357}
+  - name: Jump
+    spriteName: Jump_3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 79d22643a859cad49b2d801ea22e0216
+    layerID: 13
+    mosaicPosition: {x: 81, y: 240}
+  - name: Push
+    spriteName: Push
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eed40a1188e67d144aacf0744e3c06fc
+    layerID: 12
+    mosaicPosition: {x: 4, y: 111}
+  - name: Push
+    spriteName: Push_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3a71d42ecd8014946adc64fe37ab75ae
+    layerID: 11
+    mosaicPosition: {x: 81, y: 4}
+  - name: Nm
+    spriteName: Nm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 16a0ad1df229fce47b61812ca0400b94
+    layerID: 10
+    mosaicPosition: {x: 130, y: 358}
+  - name: Nm
+    spriteName: Nm_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9fa7792bf8709db42963f2394fd7bba4
+    layerID: 9
+    mosaicPosition: {x: 176, y: 358}
+  - name: Trans
+    spriteName: Trans
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1247757069f57d445b88ba4f090da132
+    layerID: 8
+    mosaicPosition: {x: 176, y: 240}
+  - name: Trans
+    spriteName: Trans_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 79f053c2050657c4280d749cdffcc7b4
+    layerID: 7
+    mosaicPosition: {x: 176, y: 122}
+  - name: Walk
+    spriteName: Walk
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e6be85eb0a5fd93418e90fdb5f4c5004
+    layerID: 6
+    mosaicPosition: {x: 176, y: 4}
+  - name: Walk
+    spriteName: Walk_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d2abf94dc9e212746863c2284ea81667
+    layerID: 5
+    mosaicPosition: {x: 81, y: 358}
+  - name: Breath
+    spriteName: Breath
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 17bece53ca9c945468c3e5fcab40a355
+    layerID: 4
+    mosaicPosition: {x: 130, y: 4}
+  - name: Breathe
+    spriteName: Breathe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f120a7b323216e74a8027493c9d59379
+    layerID: 3
+    mosaicPosition: {x: 130, y: 122}
+  - name: Breathe
+    spriteName: Breathe_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eabc75266e8a1e14ea7a065d28b47cfc
+    layerID: 2
+    mosaicPosition: {x: 130, y: 240}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Anim_Protag Texture
+  prefabAssetName: Anim_Protag Prefab
+  spriteLibAssetName: Anim_Protag Sprite Lib
+  secondarySpriteTextures: []

@@ -24,6 +24,12 @@ public class Event
     {
         OnButtonTriggered?.Invoke(new ButtonEvent(triggerer, isPressed));
     }
+
+    public static event Action<Transform> OnPlayerDie;
+    public static void TriggerPlayerDie(Transform player)
+    {
+        OnPlayerDie?.Invoke(player);
+    }
 }
 
 [System.Serializable]
@@ -37,4 +43,6 @@ public class ButtonEvent
         this.triggerer = triggerer;
         this.isPressed = isPressed;
     }
+
+
 }

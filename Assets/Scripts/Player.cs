@@ -7,6 +7,7 @@ using UnityEngine;
 /// 
 /// Currently handling
 /// - Skills
+/// - Player die
 /// </summary>
 public class Player : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float boxRange;
     [SerializeField] private Vector2 rangeSpawn; // Range where the cursor should start spawning
     [SerializeField] private float cdDuration; // Range where the cursor should start spawning
-    
+
 
     private Vector2 cubePlacement;
     private bool cubeCursorOn = true;
@@ -52,7 +53,7 @@ public class Player : MonoBehaviour
     {
         mousePos = new Vector3(mousePos.x, mousePos.y, transform.position.z);
         float distance = Vector3.Distance(mousePos, transform.position);
-        if (distance>boxRange)
+        if (distance > boxRange)
         {
             Vector3 direction = mousePos - transform.position;
             direction *= boxRange / distance;
@@ -64,7 +65,7 @@ public class Player : MonoBehaviour
         }
 
     }
-     
+
 
     /// <summary>
     /// Determines if cube is within the spawnRange. If yes turn cubecursor off. If no then turn it on
@@ -74,10 +75,10 @@ public class Player : MonoBehaviour
     {
         // Determine if should spawn cube cursor
         //If within spawnRange's x
-        if (cubePlacement.x<(transform.position.x + rangeSpawn.x) && cubePlacement.x> (transform.position.x - rangeSpawn.x))
+        if (cubePlacement.x < (transform.position.x + rangeSpawn.x) && cubePlacement.x > (transform.position.x - rangeSpawn.x))
         {
 
-            if (cubePlacement.y<(transform.position.y + rangeSpawn.y) && cubePlacement.y> (transform.position.y -rangeSpawn.y))
+            if (cubePlacement.y < (transform.position.y + rangeSpawn.y) && cubePlacement.y > (transform.position.y - rangeSpawn.y))
             {
                 cubeCursorOn = false;
             }
@@ -124,9 +125,13 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-
-
         SpawnCubeCursor();
+        
+    }
+
+    private void Die()
+    {
+        Event.TriggerPlayerDie(transform);
     }
 
     /// <summary>
