@@ -30,7 +30,7 @@ MonoBehaviour:
     spatialBlend: 0.5
     pitch: 1
     loop: 0
-    clip: {fileID: 8300000, guid: eb3a4936416a1de4580021846d34c36a, type: 3}
+    clip: {fileID: 8300000, guid: b93647297b96042409c2beba66dcbaa4, type: 3}
   - name: BoxDestroy
     volume: 1
     spatialBlend: 0.5
@@ -139,3 +139,15 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     clip: {fileID: 8300000, guid: 59626264c8f156a4c8c65a38c126d0f8, type: 3}
+  - name: GreedLoop
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 676361968333d304e89ad3f718d0f65b, type: 3}
+  - name: GreedStart
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 492d1ad60add78946b5bdb90aff62359, type: 3}
