@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class CollectibleTrigger : MonoBehaviour
 {
-    public int amt = 1;
+    private bool isAlive = true;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && isAlive)
         {
-            collision.transform.root.GetComponent<Player>().AddCollectible(amt);
+            collision.transform.root.GetComponent<Player>().AddCollectible();
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<CircleCollider2D>().enabled = false;
+            isAlive = false;
             SoundRepoSO.PlaySound(gameObject, "CollectiblesCollect");
             StartCoroutine(Die());
         }

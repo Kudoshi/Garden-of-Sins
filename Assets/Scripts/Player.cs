@@ -188,8 +188,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void AddCollectible(int amt)
+    public void AddCollectible()
     {
-        playerInfoSO.AddCollectible(amt);
+        playerInfoSO.AddCollectible();
     }
 }

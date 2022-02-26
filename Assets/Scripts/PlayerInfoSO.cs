@@ -13,9 +13,10 @@ public class PlayerInfoSO : ScriptableObject
     {
         dieAmt++;
     }
-    public void AddCollectible(int amt)
+    public void AddCollectible()
     {
-        totalCollectAmt += amt;
+        totalCollectAmt ++;
+        Debug.Log("PM");
     }
     public void SetupPlayerInfo()
     {
