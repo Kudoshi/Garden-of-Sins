@@ -19,8 +19,16 @@ public class LevelSO : ScriptableObject
     public void GoNextLevel(int currentStageLevel)
     {
         this.currentLevel = currentStageLevel + 1;
-        SceneManager.LoadScene(sceneBuildIndex: this.currentLevel);
+        if (this.currentLevel+1 == Application.levelCount)
+        {
+            SceneManager.LoadScene(sceneBuildIndex: 0);
 
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneBuildIndex: this.currentLevel);
+
+        }
     }
     public void GoMainMenu()
     {
