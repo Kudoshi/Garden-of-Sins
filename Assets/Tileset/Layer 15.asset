@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: bush_1
+  m_Name: Layer 15
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 92e2af6e4b4329045ac0cd1ac5ab87ad, type: 3}
+  m_Sprite: {fileID: -3260810782808404735, guid: 407240164398f9e4691b14eb3aa33130, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

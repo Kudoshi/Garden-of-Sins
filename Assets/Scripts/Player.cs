@@ -34,7 +34,11 @@ public class Player : MonoBehaviour
     /////     CUBE PLACEMENT
     ///////////////////////////////
 
-
+    private void OnDrawGizmosSelected()
+    {
+            
+            Gizmos.DrawSphere(cubePlacement, 1);
+    }
 
     /// <summary>
     /// Inputs from Player Input Controller
