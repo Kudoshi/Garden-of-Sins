@@ -16,10 +16,11 @@ public class LevelSO : ScriptableObject
     /// Called from main menu and stages
     /// </summary>
     /// <param name="currentLevel"></param>
-    public void GoNextLevel(int currentLevel)
+    public void GoNextLevel(int currentStageLevel)
     {
-        this.currentLevel = currentLevel++;
+        this.currentLevel = currentStageLevel + 1;
         SceneManager.LoadScene(sceneBuildIndex: this.currentLevel);
+
     }
     public void GoMainMenu()
     {
