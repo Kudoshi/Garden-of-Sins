@@ -97,7 +97,7 @@ public class DialogueManager : MonoBehaviour
         dialogueIndex = new Vector2Int(-1,-1);
         displayUI.SetActive(true);
         animator.SetBool("IsOpen", true);
-
+        SoundRepoSO.PlaySound(gameObject, "DialogueStart");
         // Resets Display
 
         dialogueSO.TriggerOnDialogueStart(dialogue);
@@ -114,6 +114,8 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("IsOpen", false);
 
         StartCoroutine(CheckAnimationCompleted("DialogueClose", CloseDialogueBox));
+        SoundRepoSO.PlaySound(gameObject, "DialogueEnd");
+
         dialogueSO.TriggerOnDialogueEnd(dialogue);
     }
 

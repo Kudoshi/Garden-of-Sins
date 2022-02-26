@@ -5849,6 +5849,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110941214}
   m_CullTransparentMesh: 1
+--- !u!1 &124849477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2957063948720615926, guid: ad6f7425173034f4297e54adc5d1c839, type: 3}
+  m_PrefabInstance: {fileID: 246479740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &124849483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124849477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a4902e7f4db8d42ac6ab9f66f2e17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundRepoSO: {fileID: 11400000, guid: 070abea8bbf53a04aa6f5c9919b0aac9, type: 2}
+  mixerGroup: {fileID: 24300002, guid: b3a66724dc19aca41a8af25f34184083, type: 2}
+  soundList:
+  - name: DialogueStart
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
+  - name: DialogueEnd
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
 --- !u!1001 &246479740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62002,38 +62040,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 963653349, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
-      propertyPath: m_SortingLayer
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 963653349, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
-      propertyPath: m_SortingOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 963653349, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 2046412705
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509387823, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
-      propertyPath: interactionRadius.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509387823, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
-      propertyPath: viewInteractionRadius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2632073538201621848, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
-      propertyPath: moveSpeed
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2632073538201621852, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2632073538201621852, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2632073538201621853, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -62710,6 +62716,10 @@ PrefabInstance:
     - target: {fileID: 8187582354119984041, guid: ab159ff659a400d40acc39ef8d384b40, type: 3}
       propertyPath: m_Name
       value: Collectible (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187582354119984045, guid: ab159ff659a400d40acc39ef8d384b40, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8187582354119984046, guid: ab159ff659a400d40acc39ef8d384b40, type: 3}
       propertyPath: m_RootOrder
@@ -131374,7 +131384,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1990569865
 GameObject:
@@ -131521,7 +131531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8187582354119984046, guid: ab159ff659a400d40acc39ef8d384b40, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8187582354119984046, guid: ab159ff659a400d40acc39ef8d384b40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -131593,7 +131603,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2133137628
 GameObject:
@@ -136955,45 +136965,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4577284916560722697, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 778971403}
-    - target: {fileID: 4577284916560722697, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Button_Restart
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577284916560722697, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EndScreen, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577284916715999226, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577284916715999226, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577284916715999226, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 778971403}
-    - target: {fileID: 4577284916715999226, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+    - target: {fileID: 5272228090303155114, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
+      propertyPath: soundList.Array.size
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4577284916715999226, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Button_NextLevel
+    - target: {fileID: 5272228090303155114, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
+      propertyPath: soundList.Array.data[1].name
+      value: Victory
       objectReference: {fileID: 0}
-    - target: {fileID: 4577284916715999226, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EndScreen, Assembly-CSharp
+    - target: {fileID: 5272228090303155114, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
+      propertyPath: soundList.Array.data[1].volume
+      value: 0.6
       objectReference: {fileID: 0}
-    - target: {fileID: 4577284916715999226, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+    - target: {fileID: 5272228090303155114, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
+      propertyPath: soundList.Array.data[1].useGlobalValue
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5874f2b4084f11843b5848e2fb1f7447, type: 3}
@@ -137008,13 +136994,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelWarp
       objectReference: {fileID: 0}
+    - target: {fileID: 2299723671385901155, guid: a70760327eb7e134892b7d4ffcf79189, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6023456786021183918, guid: a70760327eb7e134892b7d4ffcf79189, type: 3}
       propertyPath: endScreen
       value: 
       objectReference: {fileID: 778971403}
     - target: {fileID: 7832510685585151570, guid: a70760327eb7e134892b7d4ffcf79189, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7832510685585151570, guid: a70760327eb7e134892b7d4ffcf79189, type: 3}
       propertyPath: m_LocalPosition.x

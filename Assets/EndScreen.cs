@@ -27,6 +27,7 @@ public class EndScreen : MonoBehaviour
     }
     public void EndLevel()
     {
+        SoundRepoSO.PlayOneShotSound(gameObject, "Victory");
         collectibleCounter.text = playerInfoSO.totalCollectAmt.ToString() + " / " + totalCollectible;
 
         string minutes = Mathf.Floor(timer / 60).ToString("00");
@@ -62,6 +63,10 @@ public class EndScreen : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         int currentLevel = currentScene.buildIndex;
         levelSO.GoNextLevel(currentLevel);
+    }
+    public void Button_Hover()
+    {
+        SoundRepoSO.PlayOneShotSound(gameObject, "ButtonHover");
     }
     private void Update()
     {

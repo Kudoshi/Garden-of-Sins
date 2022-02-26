@@ -137,6 +137,7 @@ public class Player : MonoBehaviour
     public void Die()
     {
         playerInfoSO.AddDieAmt();
+        SoundRepoSO.PlayOneShotSound(gameObject, "Death");
         Event.TriggerPlayerDie(transform);
     }
 
@@ -151,12 +152,20 @@ public class Player : MonoBehaviour
         if (cubeCursor && boxPlaced == null && CheckBoxCDDuration())
         {
             boxPlaced = Instantiate(boxPf, cubePlacement, boxPf.transform.rotation);
+            SoundRepoSO.PlayOneShotSound(gameObject,"BoxSpawn");
             lastBoxTime = Time.time; 
         }
         else if (boxPlaced != null)
         {
             Destroy(boxPlaced);
+            SoundRepoSO.PlayOneShotSound(gameObject, "BoxDestroy");
+
             boxPlaced = null;
+        }
+        else
+        {
+            SoundRepoSO.PlayOneShotSound(gameObject, "BoxSpawnFail");
+
         }
     }
 

@@ -132,7 +132,10 @@ public class MovementSystem : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, 0); //Reset gravity
                 rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
                 animator.ChangeAnimationState(PLAYER_JUMP);
-
+                if (jumpAmtLeft == 2)
+                    SoundRepoSO.PlayOneShotSound(gameObject, "Jump");
+                else if (jumpAmtLeft == 1)
+                    SoundRepoSO.PlayOneShotSound(gameObject, "Jump2");
                 //Condition setting
                 jumpAmtLeft -= 1;
                 isJumping = true; 
@@ -157,10 +160,12 @@ public class MovementSystem : MonoBehaviour
         if (isGrounded && Mathf.Abs(rb.velocity.x) > 0.5)
         {
             animator.ChangeAnimationState(PLAYER_MOVE);
+            SoundRepoSO.PlaySound(gameObject, "RunLeft");
         }
         else if (isGrounded)
         {
             animator.ChangeAnimationState(PLAYER_IDLE);
+            SoundRepoSO.StopSound(gameObject, "RunLeft");
         }
         //Animation for if they are on ground or not
 

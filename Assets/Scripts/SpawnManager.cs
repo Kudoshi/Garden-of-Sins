@@ -12,7 +12,6 @@ public class SpawnManager : MonoBehaviour
     private void Awake()
     {
         spawnPoints[0].isActivated = true;
-        Debug.Log("Start pos: " + spawnPoints[0].spawnPos.position);
     }
 
     public void Respawn(Transform player)
@@ -36,7 +35,6 @@ public class SpawnManager : MonoBehaviour
         if (spawnPoint != null)
         {
             spawnPoint.isActivated = true;
-            Debug.Log("Updated spawnpoint");
         }
 
         

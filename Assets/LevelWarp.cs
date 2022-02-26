@@ -24,6 +24,7 @@ public class LevelWarp : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            collision.transform.root.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             endScreen.EndLevel();
         }
     }

@@ -10,7 +10,16 @@ public class CollectibleTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.transform.root.GetComponent<Player>().AddCollectible(amt);
-            Destroy(gameObject);
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<CircleCollider2D>().enabled = false;
+            SoundRepoSO.PlaySound(gameObject, "CollectiblesCollect");
+            StartCoroutine(Die());
         }
+    }
+
+    IEnumerator Die()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
     }
 }

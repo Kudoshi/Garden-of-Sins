@@ -167,9 +167,9 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: 325f50dc8cf448c4097a5e6a1934cd78, type: 2}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &2632073538201621851
 MonoBehaviour:
@@ -237,7 +237,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1024
-  moveSpeed: 10
+  moveSpeed: 9
   smoothTime: 0.12
   maxSpeed: 0
   jumpForce: 17
@@ -312,9 +312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86998e11e643c3409fdb89dedbe9405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: {x: 9, y: 4}
+  interactionRadius: {x: 4, y: 4}
   interactionCD: 0
-  viewInteractionRadius: 0
+  viewInteractionRadius: 1
   color: {r: 0, g: 0, b: 0, a: 0.2784314}
 --- !u!114 &1509387825
 MonoBehaviour:
@@ -357,12 +357,75 @@ MonoBehaviour:
   soundRepoSO: {fileID: 11400000, guid: 070abea8bbf53a04aa6f5c9919b0aac9, type: 2}
   mixerGroup: {fileID: 24300002, guid: b3a66724dc19aca41a8af25f34184083, type: 2}
   soundList:
-  - name: 
+  - name: BoxSpawn
     volume: 0
     spatialBlend: 0
     pitch: 0
     loop: 0
-    useGlobalValue: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
+  - name: BoxSpawnFail
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
+  - name: Death
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
+  - name: Jump
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
+  - name: RunLeft
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
+  - name: Death
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
+  - name: Jump2
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
+  - name: BoxDestroy
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
     updateInRuntime: 0
     clip: {fileID: 0}
     source: {fileID: 0}
@@ -582,9 +645,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 2046412705
+  m_SortingLayer: 5
+  m_SortingOrder: 12
   m_Sprite: {fileID: 3614643518441492883, guid: 196bb8bd94dd1c24a85e828d02651d68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

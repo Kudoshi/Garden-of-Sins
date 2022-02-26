@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 4577284915586989887}
   - component: {fileID: 4577284915586989884}
   - component: {fileID: 4577284915586989886}
+  - component: {fileID: 5272228090303155114}
   m_Layer: 5
   m_Name: EndScreen
   m_TagString: Untagged
@@ -228,6 +229,30 @@ MonoBehaviour:
   levelTimer: {fileID: 4577284917070364621}
   playerInfoSO: {fileID: 11400000, guid: e22b0c87a0689d642ae308b6e300ad23, type: 2}
   levelSO: {fileID: 11400000, guid: 278e795979968d9468b99c6b5a46e591, type: 2}
+--- !u!114 &5272228090303155114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577284915586989874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a4902e7f4db8d42ac6ab9f66f2e17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundRepoSO: {fileID: 11400000, guid: 070abea8bbf53a04aa6f5c9919b0aac9, type: 2}
+  mixerGroup: {fileID: 24300002, guid: b3a66724dc19aca41a8af25f34184083, type: 2}
+  soundList:
+  - name: ButtonHover
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
 --- !u!1 &4577284915940085640
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +608,7 @@ GameObject:
   - component: {fileID: 4577284916560722699}
   - component: {fileID: 4577284916560722696}
   - component: {fileID: 4577284916560722697}
-  - component: {fileID: 4577284916560722698}
+  - component: {fileID: 2328302435695625026}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -693,9 +718,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 278e795979968d9468b99c6b5a46e591, type: 2}
-        m_TargetAssemblyTypeName: LevelSO, Assembly-CSharp
-        m_MethodName: RestartLevel
+      - m_Target: {fileID: 4577284915586989886}
+        m_TargetAssemblyTypeName: EndScreen, Assembly-CSharp
+        m_MethodName: Button_Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -705,7 +730,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4577284916560722698
+--- !u!114 &2328302435695625026
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -714,10 +739,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 4577284916560722703}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e9732411c298fe4aacafa5f57cef706, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endScreen: {fileID: 0}
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4577284915586989886}
+          m_TargetAssemblyTypeName: EndScreen, Assembly-CSharp
+          m_MethodName: Button_Hover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
 --- !u!1 &4577284916715999224
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +771,7 @@ GameObject:
   - component: {fileID: 4577284916715999204}
   - component: {fileID: 4577284916715999205}
   - component: {fileID: 4577284916715999226}
+  - component: {fileID: 1400680634728702990}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -838,7 +880,48 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4577284916715999205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4577284915586989886}
+        m_TargetAssemblyTypeName: EndScreen, Assembly-CSharp
+        m_MethodName: Button_NextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1400680634728702990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577284916715999224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4577284915586989886}
+          m_TargetAssemblyTypeName: EndScreen, Assembly-CSharp
+          m_MethodName: Button_Hover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
 --- !u!1 &4577284916748218888
 GameObject:
   m_ObjectHideFlags: 0

@@ -174,6 +174,11 @@ public class SoundListener : MonoBehaviour
             return;
         }
 
+        if (audio.source.isPlaying)
+        {
+            return;
+        }
+
         if (audio.updateInRuntime)
         {
             audio.source.volume = audio.volume;
