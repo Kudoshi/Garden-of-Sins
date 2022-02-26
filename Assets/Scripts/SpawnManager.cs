@@ -22,7 +22,6 @@ public class SpawnManager : MonoBehaviour
             {
                 Vector3 spawnPos = new Vector3(spawnPoints[i].spawnPos.position.x, spawnPoints[i].spawnPos.position.y, player.transform.position.z);
                 player.transform.position = spawnPos;
-                Debug.Log(spawnPos);
                 break;
             }
         }
