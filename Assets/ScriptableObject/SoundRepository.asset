@@ -151,3 +151,27 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     clip: {fileID: 8300000, guid: 492d1ad60add78946b5bdb90aff62359, type: 3}
+  - name: EnvyStart
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: d85b2de203b22ec4d86da2b77171c5bb, type: 3}
+  - name: EnvyLoop
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 6e81e9ec5b4d09a4fa58c1ac35868d4f, type: 3}
+  - name: Gluttony
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: eb8c21200151fb04f9c8f0aec7efbb23, type: 3}
+  - name: Sloth
+    volume: 1
+    spatialBlend: 0.5
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 093daf54ddaebe741a3077c037e988f7, type: 3}
