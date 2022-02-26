@@ -12,6 +12,7 @@ public class SpawnManager : MonoBehaviour
     private void Awake()
     {
         spawnPoints[0].isActivated = true;
+        Debug.Log("Start pos: " + spawnPoints[0].spawnPos.position);
     }
 
     public void Respawn(Transform player)
@@ -20,7 +21,9 @@ public class SpawnManager : MonoBehaviour
         {
             if (spawnPoints[i].isActivated)
             {
-                player.transform.position = spawnPoints[i].spawnPos.position;
+                Vector3 spawnPos = new Vector3(spawnPoints[i].spawnPos.position.x, spawnPoints[i].spawnPos.position.y, player.transform.position.z);
+                player.transform.position = spawnPos;
+                Debug.Log(spawnPos);
                 break;
             }
         }
@@ -33,7 +36,10 @@ public class SpawnManager : MonoBehaviour
         if (spawnPoint != null)
         {
             spawnPoint.isActivated = true;
+            Debug.Log("Updated spawnpoint");
         }
+
+        
     }
 
     private void Event_OnPlayerDie(Transform player)

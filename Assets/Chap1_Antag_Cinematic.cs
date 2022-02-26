@@ -9,13 +9,16 @@ public class Chap1_Antag_Cinematic : MonoBehaviour
     public Transform pointsToMove;
     public float speedMove;
 
-    public DialogueEventListener dialogue1;
-    public DialogueEventListener dialogue2;
+    public DialogueTrigger dialogue1;
+    public DialogueTrigger dialogue2;
 
     public GameObject orb1;
     public GameObject orb2;
     public GameObject orb3;
+    public GameObject tutorial_dialogue;
+    public GameObject tutorial_trigger;
     public float cinematicWaitTime;
+    public GameObject lightWall;
 
     private int talkNumber = 1;
     private InteractionManager playerInteractor;
@@ -25,6 +28,15 @@ public class Chap1_Antag_Cinematic : MonoBehaviour
     {
         dialogue1.enabled = true;
         dialogue2.enabled = false;
+    }
+
+    private void Start()
+    {
+        orb1.SetActive(false);
+        orb2.SetActive(false);
+        orb3.SetActive(false);
+        tutorial_dialogue.SetActive(false);
+        tutorial_trigger.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -38,6 +50,8 @@ public class Chap1_Antag_Cinematic : MonoBehaviour
     private void CallInteract()
     {
         playerInteractor.Interact();
+        if (talkNumber == 1)
+            tutorial_dialogue.SetActive(true);
     }
     public void EndDialogue(Dialogue dialogue)
     {
@@ -47,19 +61,26 @@ public class Chap1_Antag_Cinematic : MonoBehaviour
             orb1.SetActive(true);
             orb2.SetActive(true);
             orb3.SetActive(true);
+            tutorial_dialogue.SetActive(false);
+            tutorial_trigger.SetActive(true);
+            Destroy(dialogue1);
             talkNumber++;
         }
-        if (talkNumber == 2) //Orb taken
+        else if (talkNumber == 2) //Orb taken
         {
-            
-            dialogue1.enabled = false;
-            dialogue2.enabled = true;
+            tutorial_trigger.SetActive(false);
+            orb1.SetActive(false);
+            orb2.SetActive(false);
+            orb3.SetActive(false);
             GetComponent<BoxCollider2D>().enabled = true;
+            talkNumber++;
+
         }
-        if (talkNumber == 3)
+        else if (talkNumber == 3) //Player talk 2 finish
         {
             GetComponent<BoxCollider2D>().enabled = false;
             StartCoroutine(AnimateFlyAway());
+            Destroy(lightWall);
         }
 
         
@@ -67,7 +88,7 @@ public class Chap1_Antag_Cinematic : MonoBehaviour
 
     IEnumerator AnimateFlyAway()
     {
-        yield return null;
+        yield return new WaitForSeconds(.5f);
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;

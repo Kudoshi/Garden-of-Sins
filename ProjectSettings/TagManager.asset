@@ -29,7 +29,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - TextOver
   - 
   - 
   - 
@@ -45,6 +45,9 @@ TagManager:
   - name: Ground
     uniqueID: 2131617205
     locked: 0
+  - name: AfterGround
+    uniqueID: 2915220273
+    locked: 0
   - name: NPC
     uniqueID: 1209242013
     locked: 0
@@ -56,4 +59,7 @@ TagManager:
     locked: 0
   - name: Effect
     uniqueID: 743611145
+    locked: 0
+  - name: TextOver
+    uniqueID: 2516633151
     locked: 0

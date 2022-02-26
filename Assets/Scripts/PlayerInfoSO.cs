@@ -8,6 +8,7 @@ public class PlayerInfoSO : ScriptableObject
     public int totalCollectAmt;
     public int dieAmt;
 
+
     public void AddDieAmt()
     {
         dieAmt++;
@@ -16,8 +17,9 @@ public class PlayerInfoSO : ScriptableObject
     {
         totalCollectAmt += amt;
     }
-    public void ResetCollectible()
+    public void SetupPlayerInfo()
     {
         totalCollectAmt = 0;
+        dieAmt = 0;
     }
 }

@@ -30,6 +30,6 @@ public class DialogueMessage
 {
     public string npcName;
 
-    [TextArea(3, 10)]
+    [TextArea(4, 10)]
     public string[] sentences;
 }

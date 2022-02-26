@@ -9,14 +9,18 @@ public class MoveToPoint : MonoBehaviour
 
     private int currentPath = 0;
 
+   
 
     // Update is called once per frame
     void Update()
     {
+            
+
         if (gameObject == null || points.Length == 0 || points[points.Length - 1] == null)
         {
             Debug.LogWarning("gameObject: " + gameObject.name + " not found");
             Destroy(this);
+            return;
         }
         if (transform.position.x == points[currentPath].position.x)
         {
