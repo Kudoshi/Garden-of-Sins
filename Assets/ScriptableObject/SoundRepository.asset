@@ -211,3 +211,21 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     clip: {fileID: 8300000, guid: c49992ca3d2eca440a96fe14fa465add, type: 3}
+  - name: Overworld
+    volume: 0.1
+    spatialBlend: 0
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 409dc0627ce8f8046b200608d0178611, type: 3}
+  - name: OverworldGlitchStart
+    volume: 0.1
+    spatialBlend: 0
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: abc6b102cde0d6d4396e1dd6a9578f15, type: 3}
+  - name: OverworldGlitchLoop
+    volume: 0.1
+    spatialBlend: 0
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: eaaee94b9b1df9f47a31841db06c8443, type: 3}
