@@ -37,7 +37,7 @@ public class EndScreen : MonoBehaviour
         float bestTime = PlayerPrefs.GetFloat(keyName);
 
         string newScore = "";
-        if (timer < bestTime)
+        if (timer < bestTime || bestTime == 0)
         {
             PlayerPrefs.SetFloat(keyName, timer);
             bestTime = timer;

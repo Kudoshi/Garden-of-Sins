@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BeforeGround
+    uniqueID: 1568467839
+    locked: 0
   - name: Ground
     uniqueID: 2131617205
     locked: 0
@@ -56,6 +59,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2046412705
+    locked: 0
+  - name: Boxes
+    uniqueID: 1798650877
     locked: 0
   - name: Effect
     uniqueID: 743611145

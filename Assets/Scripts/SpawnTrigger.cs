@@ -25,6 +25,7 @@ public class SpawnTrigger : MonoBehaviour
             spawnManager.UpdateSpawnPoint(transform);
             animator.ChangeAnimationState("FireOn");
             GetComponent<BoxCollider2D>().enabled = false;
+            SoundRepoSO.PlaySound(gameObject, "SaveTrigger");
         }
     }
 }
