@@ -187,3 +187,27 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     clip: {fileID: 8300000, guid: 822ba4847486d094bbb3b919e5ef82c7, type: 3}
+  - name: WrathStart
+    volume: 0.1
+    spatialBlend: 0
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 7b66aabffd313b94581aebf035186111, type: 3}
+  - name: WrathLoop
+    volume: 0.1
+    spatialBlend: 0
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 7149cb3d6a2d7cf4a8745cbc2c571a85, type: 3}
+  - name: PrideLoop
+    volume: 0.1
+    spatialBlend: 0
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 1e18fdc23cb5d6846a72346dd5b0f5fe, type: 3}
+  - name: PrideStart
+    volume: 0.1
+    spatialBlend: 0
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: c49992ca3d2eca440a96fe14fa465add, type: 3}
