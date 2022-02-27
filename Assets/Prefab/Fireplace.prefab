@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2483751478869480428}
   - component: {fileID: 2483751478869480429}
   - component: {fileID: 2483751478869480430}
+  - component: {fileID: 7806393865944170249}
   m_Layer: 0
   m_Name: Fireplace
   m_TagString: Untagged
@@ -92,8 +93,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1379747023
-  m_SortingLayer: 2
+  m_SortingLayerID: 1209242013
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -5956914428566855639, guid: 6f468a9456eaf644db6e6c1d8a732d79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -159,6 +160,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8608064975313830302}
+--- !u!114 &7806393865944170249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362804644828600637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a4902e7f4db8d42ac6ab9f66f2e17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundRepoSO: {fileID: 11400000, guid: 070abea8bbf53a04aa6f5c9919b0aac9, type: 2}
+  mixerGroup: {fileID: 24300002, guid: b3a66724dc19aca41a8af25f34184083, type: 2}
+  soundList:
+  - name: SaveTrigger
+    volume: 0
+    spatialBlend: 0
+    pitch: 0
+    loop: 0
+    useGlobalValue: 1
+    updateInRuntime: 0
+    clip: {fileID: 0}
+    source: {fileID: 0}
 --- !u!1 &7418733602289570646
 GameObject:
   m_ObjectHideFlags: 0
