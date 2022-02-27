@@ -378,7 +378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8187582354119984046, guid: ab159ff659a400d40acc39ef8d384b40, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8187582354119984046, guid: ab159ff659a400d40acc39ef8d384b40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -559,7 +559,7 @@ MonoBehaviour:
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: Pride
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 819500100}
     dialogueMessage:
     - npcName: Pride
       sentences:
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: Sloth
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 828771870}
     dialogueMessage:
     - npcName: Sloth
       sentences:
@@ -49788,7 +49788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2876670825649270768, guid: c4dc84e7af2cd3b4f81ef7d354ef983f, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2876670825649270768, guid: c4dc84e7af2cd3b4f81ef7d354ef983f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49935,10 +49935,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e7d9bc299403743b4acb741089a453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 0}
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: Lust
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 1209641172}
     dialogueMessage:
     - npcName: 
       sentences:
@@ -50070,7 +50070,7 @@ MonoBehaviour:
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: Envy
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 1278903220}
     dialogueMessage:
     - npcName: Envy 1
       sentences:
@@ -54437,7 +54437,7 @@ MonoBehaviour:
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: Gluttony
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 1338365335}
     dialogueMessage:
     - npcName: Gluttony
       sentences:
@@ -58680,7 +58680,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2632073538201621853, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2632073538201621853, guid: 9b441f9e90cc1ed4e97164418fc005fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58940,11 +58940,11 @@ MonoBehaviour:
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: Greed
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 1893901124}
     dialogueMessage:
     - npcName: 
       sentences:
-      - ' Greed lies lifeless on the floor with a pair of sheers next to him.'
+      - ' Greed lies lifeless on the floor with scratch marks on him.'
 --- !u!61 &1893901122
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62690,7 +62690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8187582354119984046, guid: ab159ff659a400d40acc39ef8d384b40, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8187582354119984046, guid: ab159ff659a400d40acc39ef8d384b40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62812,7 +62812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5147072851674368460, guid: ff4e039852f737748a0563e94d44934f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5147072851674368460, guid: ff4e039852f737748a0563e94d44934f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62894,7 +62894,7 @@ MonoBehaviour:
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: Wrath
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 2031197628}
     dialogueMessage:
     - npcName: Wrath
       sentences:
