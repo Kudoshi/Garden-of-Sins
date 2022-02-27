@@ -556,11 +556,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e7d9bc299403743b4acb741089a453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 0}
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
-    description: 
+    description: Pride
     cinematicTarget: {fileID: 0}
-    dialogueMessage: []
+    dialogueMessage:
+    - npcName: Pride
+      sentences:
+      - My wings! My feathers are falling off! What do I do!?? They're not perfect!
+        They're not perfect!
+      - "DON\u2019T LOOK AT ME! I'M IMPERFECT!"
 --- !u!61 &819500098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1021,11 +1026,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e7d9bc299403743b4acb741089a453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 0}
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
-    description: 
+    description: Sloth
     cinematicTarget: {fileID: 0}
-    dialogueMessage: []
+    dialogueMessage:
+    - npcName: Sloth
+      sentences:
+      - "Sloth doesn\u2019t look as if she is breathing."
 --- !u!61 &828771868
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49929,9 +49937,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSO: {fileID: 0}
   dialogue:
-    description: 
+    description: Lust
     cinematicTarget: {fileID: 0}
-    dialogueMessage: []
+    dialogueMessage:
+    - npcName: 
+      sentences:
+      - The both of them seems as if they fell asleep after having their lunch.
+      - 'There is a bottle labelled poisonous next to their wine glasses. '
+      - Meh, minor details.
 --- !u!61 &1209641170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50054,11 +50067,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e7d9bc299403743b4acb741089a453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 0}
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
-    description: 
+    description: Envy
     cinematicTarget: {fileID: 0}
-    dialogueMessage: []
+    dialogueMessage:
+    - npcName: Envy 1
+      sentences:
+      - Now mommy won't feel tired anymore
+    - npcName: Envy 2
+      sentences:
+      - "Yeah, she can finally rest and we won\u2019t have to fight each other anymore"
 --- !u!61 &1278903218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54415,11 +54434,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e7d9bc299403743b4acb741089a453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 0}
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
-    description: 
+    description: Gluttony
     cinematicTarget: {fileID: 0}
-    dialogueMessage: []
+    dialogueMessage:
+    - npcName: Gluttony
+      sentences:
+      - IT WAS HIS FAULT! HE TRIED TAKING MY BERRIES AWAY FROM ME!
+      - 'so I.. I .. I JUST COATED THEM WITH SOME PESTICIDES! '
+      - "HE WAS BEING A PEST! THAT GLORIFIED BIRD WAS THE PEST! IT WASN\u2019T ME!"
 --- !u!61 &1338365333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58913,11 +58937,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e7d9bc299403743b4acb741089a453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 0}
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
-    description: 
+    description: Greed
     cinematicTarget: {fileID: 0}
-    dialogueMessage: []
+    dialogueMessage:
+    - npcName: 
+      sentences:
+      - ' Greed lies lifeless on the floor with a pair of sheers next to him.'
 --- !u!61 &1893901122
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62864,11 +62891,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e7d9bc299403743b4acb741089a453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 0}
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
-    description: 
+    description: Wrath
     cinematicTarget: {fileID: 0}
-    dialogueMessage: []
+    dialogueMessage:
+    - npcName: Wrath
+      sentences:
+      - 'Have you met greed? He always goes on and on about his exercises. '
+      - 'It used to make me twitch in anger just hearing his voice. But lately, I
+        have found a way to tolerate him. '
+      - Now I feel calmer than ever,
 --- !u!61 &2031197626
 BoxCollider2D:
   m_ObjectHideFlags: 0
