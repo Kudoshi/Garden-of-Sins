@@ -1297,6 +1297,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1730555630, guid: c4dc84e7af2cd3b4f81ef7d354ef983f, type: 3}
+      propertyPath: onFragmentCollect.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730555630, guid: c4dc84e7af2cd3b4f81ef7d354ef983f, type: 3}
+      propertyPath: onFragmentCollect.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 434489498}
+    - target: {fileID: 1730555630, guid: c4dc84e7af2cd3b4f81ef7d354ef983f, type: 3}
+      propertyPath: onFragmentCollect.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730555630, guid: c4dc84e7af2cd3b4f81ef7d354ef983f, type: 3}
+      propertyPath: onFragmentCollect.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2876670825649270768, guid: c4dc84e7af2cd3b4f81ef7d354ef983f, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -1404,6 +1420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0e15bef8a0452245ae8ff1da7d19f1b, type: 3}
+--- !u!1 &434489498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1566172290632681214, guid: c0e15bef8a0452245ae8ff1da7d19f1b, type: 3}
+  m_PrefabInstance: {fileID: 434489497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &543614995
 GameObject:
   m_ObjectHideFlags: 0
