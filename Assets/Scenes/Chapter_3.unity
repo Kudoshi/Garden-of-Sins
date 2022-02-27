@@ -76505,7 +76505,39 @@ MonoBehaviour:
     dialogueMessage:
     - npcName: Wrath
       sentences:
-      - Rawr
+      - 'Oh, hello there fellow traveller! What brings you to our prosperous world
+        today? '
+      - Sightseeing? Then I do wish you a great time here at the Garden of Sin!
+      - 'I would personally love to offer you a tour of our magical land, however,
+        I am not in my best of moods today, do excuse me. '
+      - "My temper has been acting up more than usual, I don\u2019t remember the
+        last time I have felt this irritated. "
+      - Even talking to you is somehow slowly making me angrier and angrier.
+      - 'I suggest we end our conversation here, for fear that I might accidentally
+        physically scratch you. '
+      - However, I'm sure any of our other residents would be happy to accompany
+        you!
+--- !u!114 &1635108456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635108453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e7d9bc299403743b4acb741089a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
+  dialogue:
+    description: 
+    cinematicTarget: {fileID: 0}
+    dialogueMessage:
+    - npcName: Wrath
+      sentences:
+      - 'I can feel that my anger is slowly receding. '
+      - Maybe I just woke up on the wrong side of the bed today.
 --- !u!4 &1635108458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7906476567077996581, guid: 22bf489357263b942b0fa0531c3d0b97, type: 3}
@@ -80795,6 +80827,32 @@ PrefabInstance:
       propertyPath: dialogueSO
       value: 
       objectReference: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
+    - target: {fileID: 1197685849586262809, guid: 6b986515d237e5d4093d71c1673e2344, type: 3}
+      propertyPath: dialogue.dialogueMessage.Array.data[0].sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197685849586262809, guid: 6b986515d237e5d4093d71c1673e2344, type: 3}
+      propertyPath: dialogue.dialogueMessage.Array.data[0].sentences.Array.data[0]
+      value: Hey bro! Always nice to see a new face around *pants*
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197685849586262809, guid: 6b986515d237e5d4093d71c1673e2344, type: 3}
+      propertyPath: dialogue.dialogueMessage.Array.data[0].sentences.Array.data[1]
+      value: "What am I doing? I'm simply training my glutes by doing squats. Don\u2019t
+        want to miss leg day, right? *pants* "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197685849586262809, guid: 6b986515d237e5d4093d71c1673e2344, type: 3}
+      propertyPath: dialogue.dialogueMessage.Array.data[0].sentences.Array.data[2]
+      value: 'Just trying to get those gains today.*pants* '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197685849586262809, guid: 6b986515d237e5d4093d71c1673e2344, type: 3}
+      propertyPath: dialogue.dialogueMessage.Array.data[0].sentences.Array.data[3]
+      value: "Hmm? Me, *pants* heavy breathing? No, I\u2019m doing fine."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197685849586262809, guid: 6b986515d237e5d4093d71c1673e2344, type: 3}
+      propertyPath: dialogue.dialogueMessage.Array.data[0].sentences.Array.data[4]
+      value: Have I been exercising continuously for the past 8 hours? *pants* Maybe?
+        But chasing that dream bod yknow? Care to join me? *pantspantspants*
+      objectReference: {fileID: 0}
     - target: {fileID: 6949692401797795495, guid: 6b986515d237e5d4093d71c1673e2344, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -81356,6 +81414,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2018090754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8279626857851808292, guid: 6b986515d237e5d4093d71c1673e2344, type: 3}
+  m_PrefabInstance: {fileID: 1854441785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2018090755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018090754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e7d9bc299403743b4acb741089a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
+  dialogue:
+    description: 
+    cinematicTarget: {fileID: 0}
+    dialogueMessage:
+    - npcName: Greed
+      sentences:
+      - 'Maybe taking a break once in a while is a good thing. '
+      - "I don\u2019t know what came over me, but I gotta let my muscles relax man."
 --- !u!1001 &2078012790
 PrefabInstance:
   m_ObjectHideFlags: 0
