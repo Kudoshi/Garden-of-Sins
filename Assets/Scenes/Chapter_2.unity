@@ -1724,7 +1724,7 @@ MonoBehaviour:
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: 
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 707021236}
     dialogueMessage:
     - npcName: Pride
       sentences:
@@ -1756,7 +1756,7 @@ MonoBehaviour:
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: 
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 707021236}
     dialogueMessage:
     - npcName: Pride
       sentences:
@@ -1789,6 +1789,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.375, y: 2.975}
   m_EdgeRadius: 0
+--- !u!4 &707021236 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1203282532270677546, guid: ca8f83de7d47cab49a4af50e07e35b85, type: 3}
+  m_PrefabInstance: {fileID: 677926861}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &728551632
 GameObject:
   m_ObjectHideFlags: 0

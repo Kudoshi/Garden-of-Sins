@@ -12,7 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter_1.unity
     guid: 344bacad4abca8b4c8a38aa0988fe8a1
   - enabled: 1
-    path: Assets/Scenes/DemoScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Chapter_2.unity
+    guid: 1faef7549bb0c314d9b34b45668d7d86
+  - enabled: 1
+    path: Assets/Scenes/Chapter_3.unity
+    guid: 4274afe870adcd34d8110cc0086801eb
+  - enabled: 1
+    path: Assets/Scenes/Chapter_4.unity
+    guid: 2d0bb50e10edbb5468080386c78bf4f8
+  - enabled: 1
+    path: Assets/Scenes/Chapter_8.unity
+    guid: fdf731375c20d5b448e72e5a3414afd1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 02449e0c566fb6d448ed0f971bb0278c, type: 2}
