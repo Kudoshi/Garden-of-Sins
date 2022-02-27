@@ -131885,16 +131885,16 @@ MonoBehaviour:
       sentences:
       - Where are you ...
       - Who are you ...
-      - And who am i ...
+      - And who am I ...
       - You must be puzzled aren't you?
       - Well, you see... This is one of the many dream worlds that exists within
-        you
-      - As such, you can consider yourself... god of this world
+        you.
+      - As such, you can consider yourself... god of this world.
       - And as all benevolent gods do, they give... and they also take
       - Hence... choose an orb and whichever is chosen, will poof, be magically deleted
-        from this world
+        from this world.
       - But worry not, whichever you choose will not change anything in your real
-        world
+        world.
 --- !u!1 &2568013061805228082
 GameObject:
   m_ObjectHideFlags: 0
@@ -132269,9 +132269,11 @@ MonoBehaviour:
       - WHAT HAVE YOU DONE?!
       - Hahaha... I'm just playing
       - I don't really care what happens, but it seems that little orb you chose
-        has decided to unalive itself by breaking into fragments
-      - What happens now? Maybe the fragments of the orb shall answer you
-      - If there are still light for this world, we shall meet again
+        has decided to unalive itself by breaking into fragments.
+      - What happens now? You can try finding those fragments and see what happens
+        afterwards.
+      - Maybe there is still hope for this dreamworld of yours.
+      - Well, that's it from me. Good luck.
 --- !u!1 &7859324343234621960
 GameObject:
   m_ObjectHideFlags: 0
