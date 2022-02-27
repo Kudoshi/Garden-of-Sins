@@ -866,7 +866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
-    description: Lust <3
+    description: Lust
     cinematicTarget: {fileID: 317046117}
     dialogueMessage:
     - npcName: Male Lust
@@ -1302,6 +1302,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bab5a14dd87361b499d93094517f98a5, type: 3}
+--- !u!4 &491255478 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2227980864920940302, guid: bab5a14dd87361b499d93094517f98a5, type: 3}
+  m_PrefabInstance: {fileID: 491255477}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &493708171 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1566172290632681214, guid: c0e15bef8a0452245ae8ff1da7d19f1b, type: 3}
@@ -2595,9 +2600,9 @@ MonoBehaviour:
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: 
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 679940741}
     dialogueMessage:
-    - npcName: Envy 1
+    - npcName: Envy
       sentences:
       - Mommy said that being an ant would be very tiring.
     - npcName: Envy 2
@@ -2644,6 +2649,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5238094, y: 2.6190476}
   m_EdgeRadius: 0
+--- !u!4 &679940741 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3891893333782357391, guid: 5cd08471fdd39f74fab50e837dd3fa82, type: 3}
+  m_PrefabInstance: {fileID: 679940737}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &731990408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72850,7 +72860,7 @@ MonoBehaviour:
   dialogueSO: {fileID: 11400000, guid: e5d9b3fa957c69a4f939392ab138b0a5, type: 2}
   dialogue:
     description: 
-    cinematicTarget: {fileID: 0}
+    cinematicTarget: {fileID: 491255478}
     dialogueMessage:
     - npcName: Sloth
       sentences:
