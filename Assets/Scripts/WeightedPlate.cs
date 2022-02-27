@@ -15,6 +15,8 @@ using UnityEngine;
 /// </summary>
 public class WeightedPlate : MonoBehaviour
 {
+    public GameObject pressedObj;
+    public GameObject unpressedObj;
     private bool isPressed = false;
     private List<GameObject> objOnTop;
     //Check for collision
@@ -58,10 +60,14 @@ public class WeightedPlate : MonoBehaviour
         if (objOnTop.Count > 0)
         {
             isPressed = true;
+            pressedObj.SetActive(true);
+            unpressedObj.SetActive(false);
         }
         else
         {
             isPressed = false;
+            pressedObj.SetActive(false);
+            unpressedObj.SetActive(true);
         }
 
         Event.TriggerButtonTriggered(gameObject, isPressed);

@@ -10,6 +10,9 @@ using UnityEngine;
 public class ButtonTrigger : PlayerInteractable
 {
     public bool initialIsPressed; // Initially the button is on what state
+    public GameObject lever1;
+    public GameObject lever2;
+    public bool destroyAfterInteract;
     private bool isPressed;
     private void Awake()
     {
@@ -19,6 +22,12 @@ public class ButtonTrigger : PlayerInteractable
     {
         isPressed = !isPressed;
         Event.TriggerButtonTriggered(gameObject, isPressed);
+        
+        lever1.SetActive(!isPressed);
+        lever2.SetActive(isPressed);
+
+        if (destroyAfterInteract)
+            Destroy(this);
     }
 }
 
